@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */; };
-		EF9DE5732C85831500F96F78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5722C85831500F96F78 /* ContentView.swift */; };
+		EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5722C85831500F96F78 /* OnboardingView.swift */; };
 		EF9DE5752C85831700F96F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5742C85831700F96F78 /* Assets.xcassets */; };
 		EF9DE5782C85831700F96F78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5772C85831700F96F78 /* Preview Assets.xcassets */; };
 		EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE57E2C8585C700F96F78 /* MBTIView.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		EF9DE56D2C85831500F96F78 /* PracticingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticingSwiftUIApp.swift; sourceTree = "<group>"; };
-		EF9DE5722C85831500F96F78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF9DE5722C85831500F96F78 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EF9DE5742C85831700F96F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9DE5772C85831700F96F78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF9DE57E2C8585C700F96F78 /* MBTIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIView.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			children = (
 				EF9DE5822C8613D400F96F78 /* CustomModifier */,
 				EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */,
-				EF9DE5722C85831500F96F78 /* ContentView.swift */,
+				EF9DE5722C85831500F96F78 /* OnboardingView.swift */,
 				EF9DE5742C85831700F96F78 /* Assets.xcassets */,
 				EF9DE5762C85831700F96F78 /* Preview Content */,
 				EF9DE57E2C8585C700F96F78 /* MBTIView.swift */,
@@ -156,7 +156,7 @@
 			files = (
 				EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */,
 				EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */,
-				EF9DE5732C85831500F96F78 /* ContentView.swift in Sources */,
+				EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */,
 				EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */,
 				EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */,
 			);
