@@ -23,7 +23,6 @@ struct OnboardingView: View {
                         
                 }
             }
-            .padding()
         }
     }
 }

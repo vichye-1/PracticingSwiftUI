@@ -11,6 +11,7 @@ struct MBTIView: View {
     
     @State private var nickname = ""
     @State private var isSheetPresented = false
+    @State private var selectedMBTI = [-1, -1, -1, -1]
     
     let mbtiOptions = [
         ["E", "I"],
@@ -39,13 +40,16 @@ struct MBTIView: View {
                 
                     Spacer()
                     
-                    ForEach(mbtiOptions, id: \.self) { column in
+                    ForEach(0..<mbtiOptions.count, id: \.self) { columnIndex in
                         VStack {
-                            ForEach(column, id: \.self) { row in
-                                Button(action: {}) {
-                                    Text(row)
+                            ForEach(0..<mbtiOptions[columnIndex].count, id: \.self) { rowIndex in
+                                Button(action: {
+                                    selectedMBTI[columnIndex] = rowIndex
+                                }) {
+                                    Text(mbtiOptions[columnIndex][rowIndex])
                                         .frame(minWidth: 40, minHeight: 40)
-                                        .foregroundStyle(.gray)
+                                        .background(selectedMBTI[columnIndex] == rowIndex ? .gray : .white)
+                                        .foregroundStyle(selectedMBTI[columnIndex] == rowIndex ? .white : .gray)
                                         .clipShape(Circle())
                                         .overlay(Circle().stroke(.gray, lineWidth: 1))
                                 }

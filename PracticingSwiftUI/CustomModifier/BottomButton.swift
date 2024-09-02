@@ -15,7 +15,7 @@ private struct BottomButton: ViewModifier {
             .background(.blue)
             .foregroundStyle(.white)
             .cornerRadius(20)
-            .padding(.horizontal, 4)
+            .padding(.horizontal, 16)
             .font(.title3)
             .bold()
     }
