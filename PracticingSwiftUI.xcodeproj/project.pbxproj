@@ -14,6 +14,7 @@
 		EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE57E2C8585C700F96F78 /* MBTIView.swift */; };
 		EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5802C8598A700F96F78 /* AssignView.swift */; };
 		EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5832C8613EC00F96F78 /* BottomButton.swift */; };
+		EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		EF9DE57E2C8585C700F96F78 /* MBTIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIView.swift; sourceTree = "<group>"; };
 		EF9DE5802C8598A700F96F78 /* AssignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignView.swift; sourceTree = "<group>"; };
 		EF9DE5832C8613EC00F96F78 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				EF9DE5822C8613D400F96F78 /* CustomModifier */,
-				EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */,
 				EF9DE5722C85831500F96F78 /* OnboardingView.swift */,
-				EF9DE5742C85831700F96F78 /* Assets.xcassets */,
-				EF9DE5762C85831700F96F78 /* Preview Content */,
 				EF9DE57E2C8585C700F96F78 /* MBTIView.swift */,
 				EF9DE5802C8598A700F96F78 /* AssignView.swift */,
+				EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */,
+				EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */,
+				EF9DE5742C85831700F96F78 /* Assets.xcassets */,
+				EF9DE5762C85831700F96F78 /* Preview Content */,
 			);
 			path = PracticingSwiftUI;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */,
 				EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */,
 				EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */,
+				EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

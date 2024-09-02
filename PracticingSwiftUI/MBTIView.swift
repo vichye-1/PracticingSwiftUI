@@ -22,8 +22,11 @@ struct MBTIView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                profileButton()
+            VStack(spacing: 20) {
+                NavigationLink(destination: SelectProfileImageView()) {
+                    profileImage()
+                        .padding(.top, 20)
+                }
                 
                 TextField("닉네임을 입력해주세요 :)", text: $nickname)
                     .padding(.horizontal)
@@ -37,8 +40,7 @@ struct MBTIView: View {
                     Text("MBTI")
                         .bold()
                         .font(.title3)
-                
-                    Spacer()
+                        .padding(.trailing, 15)
                     
                     ForEach(0..<mbtiOptions.count, id: \.self) { columnIndex in
                         VStack {
@@ -47,7 +49,7 @@ struct MBTIView: View {
                                     selectedMBTI[columnIndex] = rowIndex
                                 }) {
                                     Text(mbtiOptions[columnIndex][rowIndex])
-                                        .frame(minWidth: 40, minHeight: 40)
+                                        .frame(minWidth: 45, minHeight: 45)
                                         .background(selectedMBTI[columnIndex] == rowIndex ? .gray : .white)
                                         .foregroundStyle(selectedMBTI[columnIndex] == rowIndex ? .white : .gray)
                                         .clipShape(Circle())
@@ -72,16 +74,12 @@ struct MBTIView: View {
         }
     }
     
-    private func profileButton() -> some View{
-        Button(action: {
-            
-        }, label: {
-            Image("profile_1")
-                .resizable()
-                .frame(width: 120, height: 120)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.blue, lineWidth: 5))
-        })
+    private func profileImage() -> some View{
+        Image("profile_1")
+            .resizable()
+            .frame(width: 120, height: 120)
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.blue, lineWidth: 5))
     }
     
     private func completeButton() -> some View {
