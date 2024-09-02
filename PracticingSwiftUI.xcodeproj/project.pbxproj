@@ -11,6 +11,9 @@
 		EF9DE5732C85831500F96F78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5722C85831500F96F78 /* ContentView.swift */; };
 		EF9DE5752C85831700F96F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5742C85831700F96F78 /* Assets.xcassets */; };
 		EF9DE5782C85831700F96F78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5772C85831700F96F78 /* Preview Assets.xcassets */; };
+		EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE57E2C8585C700F96F78 /* MBTIView.swift */; };
+		EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5802C8598A700F96F78 /* AssignView.swift */; };
+		EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5832C8613EC00F96F78 /* BottomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		EF9DE5722C85831500F96F78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF9DE5742C85831700F96F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9DE5772C85831700F96F78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9DE57E2C8585C700F96F78 /* MBTIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTIView.swift; sourceTree = "<group>"; };
+		EF9DE5802C8598A700F96F78 /* AssignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignView.swift; sourceTree = "<group>"; };
+		EF9DE5832C8613EC00F96F78 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		EF9DE56F2C85831500F96F78 /* PracticingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EF9DE5822C8613D400F96F78 /* CustomModifier */,
 				EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */,
 				EF9DE5722C85831500F96F78 /* ContentView.swift */,
 				EF9DE5742C85831700F96F78 /* Assets.xcassets */,
 				EF9DE5762C85831700F96F78 /* Preview Content */,
+				EF9DE57E2C8585C700F96F78 /* MBTIView.swift */,
+				EF9DE5802C8598A700F96F78 /* AssignView.swift */,
 			);
 			path = PracticingSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +74,14 @@
 				EF9DE5772C85831700F96F78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF9DE5822C8613D400F96F78 /* CustomModifier */ = {
+			isa = PBXGroup;
+			children = (
+				EF9DE5832C8613EC00F96F78 /* BottomButton.swift */,
+			);
+			path = CustomModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */,
+				EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */,
 				EF9DE5732C85831500F96F78 /* ContentView.swift in Sources */,
 				EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */,
+				EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

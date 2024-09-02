@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Spacer()
+                Image("launch")
+                Spacer()
+                Image("launchImage")
+                Spacer()
+                
+                NavigationLink(destination: MBTIView()) {
+                    Text("시작하기")
+                        .asBottomButton()
+                        
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
