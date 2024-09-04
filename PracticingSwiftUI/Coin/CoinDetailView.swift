@@ -9,16 +9,24 @@ import SwiftUI
 
 struct CoinDetailView: View {
     
-    init() {
-        print("DetailView Init")
-    }
+    let market: Market
     
     var body: some View {
-        Text("Coin Details")
+        NavigationView {
+            HStack {
+                VStack {
+                    Text(market.koreanName)
+                    Text(market.englishName)
+                    Text(market.market)
+                }
+                Spacer()
+                
+                Image(systemName: market.like ? "star.fill": "star")
+            }
+                .navigationTitle("Market Details")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+           
         
     }
-}
-
-#Preview {
-    CoinDetailView()
 }

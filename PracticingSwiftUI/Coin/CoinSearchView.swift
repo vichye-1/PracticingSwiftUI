@@ -49,7 +49,7 @@ struct CoinSearchView: View {
             ForEach($markets, id: \.id) { $item in
                 if filteredMarketInfo.contains(where: { $0.id == item.id }) {
                     NavigationLink {
-                        NavigationLazyView(CoinDetailView())
+                        NavigationLazyView(CoinDetailView(market: item))
                     } label: {
                         CoinRowView(item: $item)
                     }
