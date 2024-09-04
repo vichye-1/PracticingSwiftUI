@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1151542C87699400E2AA1B /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151532C87699400E2AA1B /* CoinDetailView.swift */; };
+		EF1151572C876C1800E2AA1B /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151562C876C1800E2AA1B /* Market.swift */; };
+		EF1151592C876CB800E2AA1B /* UpbitNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */; };
 		EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */; };
 		EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5722C85831500F96F78 /* OnboardingView.swift */; };
 		EF9DE5752C85831700F96F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5742C85831700F96F78 /* Assets.xcassets */; };
@@ -15,9 +18,13 @@
 		EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5802C8598A700F96F78 /* AssignView.swift */; };
 		EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5832C8613EC00F96F78 /* BottomButton.swift */; };
 		EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */; };
+		EFBAFAA82C875B1D0028DCAB /* CoinSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF1151532C87699400E2AA1B /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
+		EF1151562C876C1800E2AA1B /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitNetwork.swift; sourceTree = "<group>"; };
 		EF9DE56D2C85831500F96F78 /* PracticingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticingSwiftUIApp.swift; sourceTree = "<group>"; };
 		EF9DE5722C85831500F96F78 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,7 @@
 		EF9DE5802C8598A700F96F78 /* AssignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignView.swift; sourceTree = "<group>"; };
 		EF9DE5832C8613EC00F96F78 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
+		EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1151522C87698700E2AA1B /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */,
+				EF1151532C87699400E2AA1B /* CoinDetailView.swift */,
+				EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		EF1151552C876BE900E2AA1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF1151562C876C1800E2AA1B /* Market.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EF9DE5642C85831500F96F78 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +85,8 @@
 		EF9DE56F2C85831500F96F78 /* PracticingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EF1151552C876BE900E2AA1B /* Model */,
+				EF1151522C87698700E2AA1B /* Coin */,
 				EF9DE5822C8613D400F96F78 /* CustomModifier */,
 				EF9DE5722C85831500F96F78 /* OnboardingView.swift */,
 				EF9DE57E2C8585C700F96F78 /* MBTIView.swift */,
@@ -162,7 +190,11 @@
 				EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */,
 				EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */,
 				EF9DE5812C8598A700F96F78 /* AssignView.swift in Sources */,
+				EF1151592C876CB800E2AA1B /* UpbitNetwork.swift in Sources */,
+				EFBAFAA82C875B1D0028DCAB /* CoinSearchView.swift in Sources */,
+				EF1151542C87699400E2AA1B /* CoinDetailView.swift in Sources */,
 				EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */,
+				EF1151572C876C1800E2AA1B /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
