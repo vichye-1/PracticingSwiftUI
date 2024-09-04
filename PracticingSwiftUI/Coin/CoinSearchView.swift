@@ -21,36 +21,56 @@ struct CoinSearchView: View {
             ScrollView {
                 listView()
             }
+            .refreshable {
+                fetchMarket()
+            }
             .navigationTitle("Search")
             .searchable(text: $searchKeyword, prompt: "Search")
         }
         .task {
-            UpbitNetwork.fetchMarket { result in
-                switch result {
-                case .success(let coinData):
-                    self.markets = coinData
-                case .failure(let failure):
-                    print("error! \(failure)")
+            fetchMarket()
+        }
+    }
+    
+    func fetchMarket() {
+        UpbitNetwork.fetchMarket { result in
+            switch result {
+            case .success(let coinData):
+                self.markets = coinData
+            case .failure(let failure):
+                print("error! \(failure)")
+            }
+        }
+    }
+    
+    // MARK: - $item, item 언제 써야하는지
+    func listView() -> some View {
+        LazyVStack {
+            ForEach($markets, id: \.id) { $item in
+                if filteredMarketInfo.contains(where: { $0.id == item.id }) {
+                    NavigationLink {
+                        NavigationLazyView(CoinDetailView())
+                    } label: {
+                        CoinRowView(item: $item)
+                    }
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
         }
     }
     
-    func listView() -> some View {
-        LazyVStack {
-            ForEach(filteredMarketInfo, id: \.self) { item in
-                    rowView(item)
-            }
-        }
-    }
+}
 
-    func rowView(_ item: Market) -> some View {
+struct CoinRowView: View {
+    @Binding var item: Market
+    
+    var body: some View {
         HStack(spacing: 20){
             Image(systemName: "bitcoinsign.circle.fill")
                 .resizable()
                 .frame(width: 40, height: 40)
                 .padding(.leading, 16)
-                
+            
             VStack(alignment: .leading) {
                 Text(item.koreanName)
                     .font(.title3)
@@ -60,9 +80,27 @@ struct CoinSearchView: View {
                     .foregroundStyle(.gray)
             }
             Spacer()
-            Image(systemName: "star")
-                .padding(.trailing, 16)
+            Button(action: {
+                item.like.toggle()
+            }, label: {
+                Image(systemName: item.like ? "star.fill" : "star")
+                    .padding(.trailing, 16)
+            })
         }
+    }
+}
+
+struct NavigationLazyView<Content: View>: View {
+    
+    let build: () -> Content
+    
+    var body: some View {
+        build()
+    }
+    
+    init(_ build: @autoclosure @escaping () -> Content) {
+        self.build = build
+        print("navigationLazyView Init")
     }
 }
 

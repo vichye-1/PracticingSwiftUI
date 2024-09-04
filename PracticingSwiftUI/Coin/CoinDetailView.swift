@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct CoinDetailView: View {
+    
+    init() {
+        print("DetailView Init")
+    }
+    
     var body: some View {
         Text("Coin Details")
+        
     }
 }
 

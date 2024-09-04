@@ -8,6 +8,8 @@
 import Foundation
 
 struct Market: Decodable, Hashable {
+    let id = UUID()
+    var like = false
     let market, koreanName, englishName: String
     
     enum CodingKeys: String, CodingKey {
