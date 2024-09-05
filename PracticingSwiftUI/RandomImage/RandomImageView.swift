@@ -11,8 +11,9 @@ struct RandomImageView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack {
+                VStack(spacing: 20) {
                     titleStyle("First Section")
+                        .padding(.top, 20)
                     titleStyle("Second Section")
                     titleStyle("Third Section")
                     titleStyle("Forth Section")
@@ -28,16 +29,20 @@ struct RandomImageView: View {
             Text(title)
                 .font(.title2)
                 .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 16)
+
             ScrollView(.horizontal) {
-                HStack{
+                HStack(){
+                    Spacer(minLength: 10)
                     ForEach(0..<10) { item in
                         RoundedRectangle(cornerRadius: 25.0)
                             .fill(.blue)
                             .frame(width: 100, height: 150)
                     }
+                    
                 }
             }
-            
         }
     }
 }
