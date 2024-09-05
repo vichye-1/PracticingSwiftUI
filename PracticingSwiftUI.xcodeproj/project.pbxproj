@@ -10,6 +10,7 @@
 		EF1151542C87699400E2AA1B /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151532C87699400E2AA1B /* CoinDetailView.swift */; };
 		EF1151572C876C1800E2AA1B /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151562C876C1800E2AA1B /* Market.swift */; };
 		EF1151592C876CB800E2AA1B /* UpbitNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */; };
+		EF11515E2C89EE9700E2AA1B /* RandomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11515D2C89EE9700E2AA1B /* RandomImageView.swift */; };
 		EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */; };
 		EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5722C85831500F96F78 /* OnboardingView.swift */; };
 		EF9DE5752C85831700F96F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9DE5742C85831700F96F78 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		EF1151532C87699400E2AA1B /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
 		EF1151562C876C1800E2AA1B /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitNetwork.swift; sourceTree = "<group>"; };
+		EF11515D2C89EE9700E2AA1B /* RandomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageView.swift; sourceTree = "<group>"; };
 		EF9DE56D2C85831500F96F78 /* PracticingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9DE5702C85831500F96F78 /* PracticingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticingSwiftUIApp.swift; sourceTree = "<group>"; };
 		EF9DE5722C85831500F96F78 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EF11515C2C89EE8600E2AA1B /* RandomImage */ = {
+			isa = PBXGroup;
+			children = (
+				EF11515D2C89EE9700E2AA1B /* RandomImageView.swift */,
+			);
+			path = RandomImage;
+			sourceTree = "<group>";
+		};
 		EF9DE5642C85831500F96F78 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		EF9DE56F2C85831500F96F78 /* PracticingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EF11515C2C89EE8600E2AA1B /* RandomImage */,
 				EF1151552C876BE900E2AA1B /* Model */,
 				EF1151522C87698700E2AA1B /* Coin */,
 				EF9DE5822C8613D400F96F78 /* CustomModifier */,
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9DE57F2C8585C700F96F78 /* MBTIView.swift in Sources */,
+				EF11515E2C89EE9700E2AA1B /* RandomImageView.swift in Sources */,
 				EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */,
 				EF9DE5732C85831500F96F78 /* OnboardingView.swift in Sources */,
 				EF9DE5712C85831500F96F78 /* PracticingSwiftUIApp.swift in Sources */,
