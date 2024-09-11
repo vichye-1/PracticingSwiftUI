@@ -22,13 +22,13 @@ struct CoinSearchView: View {
                 listView()
             }
             .refreshable {
-                fetchMarket()
+                fetchMarketAsyncAwait()
             }
             .navigationTitle("Search")
             .searchable(text: $searchKeyword, prompt: "Search")
         }
         .task {
-            fetchMarket()
+            fetchMarketAsyncAwait()
         }
     }
     
@@ -39,6 +39,17 @@ struct CoinSearchView: View {
                 self.markets = coinData
             case .failure(let failure):
                 print("error! \(failure)")
+            }
+        }
+    }
+    
+    func fetchMarketAsyncAwait() {
+        Task {
+            do {
+                let markets = try await UpbitAsyncAwaitNetworkManager.shared.fetchUpbitAsyncAwait()
+                self.markets = markets
+            } catch {
+                print("error: \(error)")
             }
         }
     }

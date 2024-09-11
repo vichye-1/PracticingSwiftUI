@@ -20,6 +20,7 @@
 		EF9DE5842C8613EC00F96F78 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5832C8613EC00F96F78 /* BottomButton.swift */; };
 		EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */; };
 		EFBAFAA82C875B1D0028DCAB /* CoinSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */; };
+		EFE521BA2C9171E5004ED9E0 /* UpbitAsyncAwaitNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE521B92C9171E5004ED9E0 /* UpbitAsyncAwaitNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EF9DE5832C8613EC00F96F78 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		EF9DE5852C8685A100F96F78 /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
 		EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchView.swift; sourceTree = "<group>"; };
+		EFE521B92C9171E5004ED9E0 /* UpbitAsyncAwaitNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitAsyncAwaitNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				EFBAFAA72C875B1D0028DCAB /* CoinSearchView.swift */,
 				EF1151532C87699400E2AA1B /* CoinDetailView.swift */,
 				EF1151582C876CB800E2AA1B /* UpbitNetwork.swift */,
+				EFE521B92C9171E5004ED9E0 /* UpbitAsyncAwaitNetworkManager.swift */,
 			);
 			path = Coin;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				EF1151542C87699400E2AA1B /* CoinDetailView.swift in Sources */,
 				EF9DE5862C8685A100F96F78 /* SelectProfileImageView.swift in Sources */,
 				EF1151572C876C1800E2AA1B /* Market.swift in Sources */,
+				EFE521BA2C9171E5004ED9E0 /* UpbitAsyncAwaitNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
